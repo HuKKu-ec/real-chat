@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Kodchasan:ital,wght@0,200;1,200&family=Lato:wght@300&family=Nunito:wght@200&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Charm', cursive;
+  font-family: 'Kodchasan', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
