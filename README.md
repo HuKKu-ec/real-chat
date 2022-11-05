@@ -1,4 +1,10 @@
 # REAL-CHAT
+## You cav view video recording of the working project
+
+
+https://user-images.githubusercontent.com/70440965/200126197-076e56bb-96aa-48a9-9890-daf46f27ced4.mp4
+
+
 ## You can view this project using this link
 [https://inquisitive-tulumba-fe7761.netlify.app/](https://inquisitive-tulumba-fe7761.netlify.app/)
 ## Purpose of project
