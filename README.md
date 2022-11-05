@@ -2,12 +2,12 @@
 ## You can view this project using this link
 [https://inquisitive-tulumba-fe7761.netlify.app/](https://inquisitive-tulumba-fe7761.netlify.app/)
 ## Purpose of project
-This is a project submitted to the career development program conducted by the Tinkerhub Hirehack team for the selection to CDP.2.0 program.
+This is a project submitted to the career development program conducted by the Tinkerhub Hirehack team for the selection to the CDP.2.0 program.
 # About Real-chat
 This is a **Realtime Social messaging tool**.
 ### Stacks used
 * React -Frontend
-* Firebasee-Backend,Databas
+* Firebasee-Backend,Database
 * The site hosted using Netlify
 
 ### Things that I done in this project
