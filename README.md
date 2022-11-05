@@ -1,3 +1,59 @@
+# REAL-CHAT
+## You can view this project using this link
+[https://inquisitive-tulumba-fe7761.netlify.app/](https://inquisitive-tulumba-fe7761.netlify.app/)
+## Purpose of project
+This is a project submitted to the career development program conducted by the Tinkerhub Hirehack team for the selection to CDP.2.0 program.
+# About Real-chat
+This is a **Realtime Social messaging tool**.
+### Stacks used
+* React -Frontend
+* Firebasee-Backend,Databas
+* The site hosted using Netlify
+
+### Things that I done in this project
+* User Authentication- Firebase Authentication  ( Phone Number )
+* Frontend is programmed using react.
+* Datas are stored in firebase firestore
+* It is able to Delete and Edit the previous messages.
+* Messages can be saved, and retrievable later when user logs in again.
+
+### Things that can be added in future
+* Upload profile pic
+* Add emojies in chats
+* Dark and light modes
+* mobile screen UI
+* Notification alerts
+* Sending Pics , Videos, Doccuments, Audios, Stickers
+* Group chats
+* Video call,audio calls
+* Status sections
+
+
+
+----
+---
+# NOTE
+> Don't forget to add .env file which contain firebase keys.The file be like this:
+```
+REACT_APP_APIKEY=AIzaSy*****BLwk1c*****fzDsxok******************
+REACT_APP_AUTHDOMAIN=****-chat-******.firebaseapp.com
+REACT_APP_PROJECTID=real-chat-*****
+REACT_APP_STORAGEBUCKET=real-chat-*****.appspot.com
+REACT_APP_MSID=18888***********8
+REACT_APP_APPID=*:**************************
+REACT_APP_MID=*8-********
+```
+
+> All other things are just commen as all react projects
+
+you may able to see output by just go the project directory, and run :
+### `npm start`
+
+---
+---
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
