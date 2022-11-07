@@ -103,11 +103,12 @@ input {
   display: flex;
   position: fixed;
   margin: 0px auto;
+  width: 62%;
+  max-width: 880px;
 }
 .messege-input {
   bottom: 20px;
   flex: 90%;
-  width: 700px;
 }
 .send-button {
   cursor: pointer;
