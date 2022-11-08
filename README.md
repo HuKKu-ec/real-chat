@@ -50,6 +50,8 @@ REACT_APP_APPID=*:**************************
 REACT_APP_MID=*8-********
 ```
 
+> Also don't forget to activate firebase phone Authentication 
+
 > All other things are just commen as all react projects
 
 you may able to see output by just go the project directory, and run :
