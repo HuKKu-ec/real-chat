@@ -25,7 +25,8 @@ This is a **Realtime Social messaging tool**.
 
 ### Things that can be added in future
 * Upload profile pic
-* Add emojies in chats
+* Add emojies in chats ✔️ 
+* scroll bar style✔️
 * Dark and light modes
 * mobile screen UI
 * Notification alerts
