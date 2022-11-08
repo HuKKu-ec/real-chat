@@ -68,9 +68,6 @@ input {
 .chat-menu-container {
   background-color: #404258;
   padding: 5px;
-  height: 78vh;
-  overflow: scroll;
-  overflow-x: hidden;
 }
 .chat-container {
   display: flex;
@@ -124,8 +121,6 @@ input {
 .chat-wrapper {
   height: 72vh;
   width: auto;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .messege-box-sender {
