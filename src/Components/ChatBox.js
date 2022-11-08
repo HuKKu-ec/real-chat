@@ -10,6 +10,7 @@ import { v4 as uuid } from 'uuid';
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../Context/AuthContext';
 import { db } from '../Firebase/config';
+import InputEmoji from 'react-input-emoji';
 
 const ChatBox = () => {
   const [message, setMessage] = useState('');
@@ -99,7 +100,7 @@ const ChatBox = () => {
   return (
     <>
       {reciever.uid ? (
-        <div className="chatbox-container">
+        <div className="chatbox-container" style={{ position: 'relative' }}>
           <div className="chat-header">
             <p className="profile">{reciever ? reciever.name : ''}</p>
           </div>
@@ -147,7 +148,7 @@ const ChatBox = () => {
           </div>
 
           <div className="messege-input-field">
-            <input
+            {/* <input
               type="text"
               placeholder="Message"
               className="messege-input"
@@ -155,6 +156,15 @@ const ChatBox = () => {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
+              
+            /> */}
+
+            <InputEmoji
+              placeholder="Message"
+              className="messege-input"
+              value={message}
+              onChange={setMessage}
+              onEnter={messageHandler}
             />
             <button className="send-button" onClick={messageHandler}>
               send
