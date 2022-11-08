@@ -11,14 +11,15 @@ import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../Context/AuthContext';
 import { db } from '../Firebase/config';
 import InputEmoji from 'react-input-emoji';
+import { Scrollbars } from 'react-custom-scrollbars-2';
 
 const ChatBox = () => {
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState('');
-
   const { reciever, currentUser } = useContext(AuthContext);
 
   //initial fetching real time data from firestore
+
   useEffect(() => {
     const fetchMessages = async () => {
       const combineId =
@@ -97,6 +98,7 @@ const ChatBox = () => {
       });
     }
   };
+
   return (
     <>
       {reciever.uid ? (
@@ -104,47 +106,49 @@ const ChatBox = () => {
           <div className="chat-header">
             <p className="profile">{reciever ? reciever.name : ''}</p>
           </div>
-          <div className="chat-wrapper">
-            {messages &&
-              messages.map((value, i) => {
-                if (value.senderUid === currentUser.uid) {
-                  return (
-                    <div key={i} className="messege-box-sender">
-                      <p>{value.message}</p>
-                      <p
-                        className="delete-button"
-                        style={{
-                          margin: '0px',
-                          padding: '0px',
-                          display: 'inline',
-                          float: 'left',
-                        }}
-                        onClick={() => deleteButtonHandler(value)}
-                      >
-                        delete
-                      </p>
-                      <p
-                        style={{
-                          margin: '0px',
-                          padding: '0px',
-                          paddingLeft: '20px',
-                          display: 'inline',
-                          float: 'left',
-                        }}
-                        onClick={() => editButtonHandler(value)}
-                      >
-                        edit
-                      </p>
-                    </div>
-                  );
-                } else {
-                  return (
-                    <div key={i} className="messege-box-reciever">
-                      <p>{value.message}</p>
-                    </div>
-                  );
-                }
-              })}
+          <div className="chat-wrapper" id="chat-wrapper">
+            <Scrollbars autoHide style={{ height: '72vh' }}>
+              {messages &&
+                messages.map((value, i) => {
+                  if (value.senderUid === currentUser.uid) {
+                    return (
+                      <div key={i} className="messege-box-sender">
+                        <p>{value.message}</p>
+                        <p
+                          className="delete-button"
+                          style={{
+                            margin: '0px',
+                            padding: '0px',
+                            display: 'inline',
+                            float: 'left',
+                          }}
+                          onClick={() => deleteButtonHandler(value)}
+                        >
+                          delete
+                        </p>
+                        <p
+                          style={{
+                            margin: '0px',
+                            padding: '0px',
+                            paddingLeft: '20px',
+                            display: 'inline',
+                            float: 'left',
+                          }}
+                          onClick={() => editButtonHandler(value)}
+                        >
+                          edit
+                        </p>
+                      </div>
+                    );
+                  } else {
+                    return (
+                      <div key={i} className="messege-box-reciever">
+                        <p>{value.message}</p>
+                      </div>
+                    );
+                  }
+                })}
+            </Scrollbars>
           </div>
 
           <div className="messege-input-field">
